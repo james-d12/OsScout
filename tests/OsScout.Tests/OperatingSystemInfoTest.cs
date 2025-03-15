@@ -77,7 +77,7 @@ public sealed class OperatingSystemInfoTest
         var content = File.ReadAllText(file);
 
         // Act
-        var osRelease = OperatingSystemInfo.GetOsInfo(content);
+        var osRelease = OperatingSystemInfo.GetOsReleaseInfo(content);
 
         // Assert
         Assert.Equal(expectedType, osRelease.Type);

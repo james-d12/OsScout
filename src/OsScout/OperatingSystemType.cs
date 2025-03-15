@@ -7,6 +7,7 @@ public enum OperatingSystemType
 {
     // Windows
     Windows,
+    Windows32,
 
     // MacOS,
     MacOs,

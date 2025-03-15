@@ -26,11 +26,21 @@ public static class OperatingSystemInfo
         }
 
         var content = File.ReadAllText(ReleaseInfoFile);
-        var osRelease = GetOsInfo(content);
+        var osRelease = GetOsReleaseInfo(content);
         return osRelease.Type;
     }
 
-    public static OperatingSystemRelease GetOsInfo(string content)
+    private static OperatingSystemType GetOperatingSystemMacOs()
+    {
+        return OperatingSystemType.MacOs;
+    }
+
+    private static OperatingSystemType GetOperatingSystemWindows()
+    {
+        return OperatingSystemType.Windows;
+    }
+
+    public static OperatingSystemRelease GetOsReleaseInfo(string content)
     {
         var osRelease = new OperatingSystemRelease();
 
@@ -60,15 +70,5 @@ public static class OperatingSystemInfo
         }
 
         return osRelease;
-    }
-
-    private static OperatingSystemType GetOperatingSystemMacOs()
-    {
-        return OperatingSystemType.Other;
-    }
-
-    private static OperatingSystemType GetOperatingSystemWindows()
-    {
-        return OperatingSystemType.Other;
     }
 }
