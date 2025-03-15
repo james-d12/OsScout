@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\OsScout\OsScout.csproj"/>
+        <ProjectReference Include="..\OsScout\OsScout.csproj"/>
     </ItemGroup>
 
     <ItemGroup>

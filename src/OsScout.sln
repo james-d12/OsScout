@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OsScout", "OsScout/OsScout.csproj", "{ED2BEB44-1B72-450B-9817-ADFBFDA54802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OsScout.Tests", "..\tests\OsScout.Tests\OsScout.Tests.csproj", "{9527D312-AF0F-42ED-A9D9-2C94564FD371}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OsScout.Tests", "OsScout.Tests\OsScout.Tests.csproj", "{9527D312-AF0F-42ED-A9D9-2C94564FD371}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{3230BECF-E293-4E9B-AA41-7A5DE72DEA61}"
 	ProjectSection(SolutionItems) = preProject
