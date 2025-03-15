@@ -1,6 +1,6 @@
 namespace OsScout;
 
-public record struct OperatingSystemRelease
+internal record struct OperatingSystemRelease
 {
     public OperatingSystemType Type { get; set; }
     public string Id { get; set; }

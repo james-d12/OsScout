@@ -18,7 +18,7 @@ public static class OperatingSystemInfo
         return OperatingSystemType.Other;
     }
 
-    public static OperatingSystemType GetOperatingSystemLinux()
+    private static OperatingSystemType GetOperatingSystemLinux()
     {
         if (!File.Exists(ReleaseInfoFile))
         {
@@ -40,11 +40,11 @@ public static class OperatingSystemInfo
         return OperatingSystemType.Windows;
     }
 
-    public static OperatingSystemRelease GetOsReleaseInfo(string content)
+    internal static OperatingSystemRelease GetOsReleaseInfo(string content)
     {
         var osRelease = new OperatingSystemRelease();
 
-        foreach (var line in content.Split("\n"))
+        foreach (var line in content.Split('\n'))
         {
             var parts = line.Split('=');
             var key = parts.ElementAtOrDefault(0)?.Trim().Replace("\"", "").Replace("'", "").ToLowerInvariant();
